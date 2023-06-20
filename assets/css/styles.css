@@ -428,6 +428,39 @@ img {
     display: block;
 
 }
+#resume-button-1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    /* color: var(--title-color); */
+    background-color: transparent;
+    border: 0;
+    padding: 0 1.5rem 0;
+    transition: 0.5s;
+}
+#resume-link-2 {
+    font-size: var(--normal-font-size);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.button-flex {
+    display: inline-flex;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: var(--mb-0-75);
+    border: 2px solid var(--first-color);
+    border-radius: 0.5rem;
+    font-weight: var(--font-medium);
+    transition: 0.5s;
+    margin-right: var(--mb-0-75);
+}
 
 .about__description {
     text-align: justify;
