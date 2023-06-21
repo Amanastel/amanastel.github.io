@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio | aman Kumar</title>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+
+            <div id="home" class="nav-link home">
+                <div class="container">
+                    <nav id="nav-menu">
+                        <img src="/assets/img/tp.png" alt="logo" class="logo" >
+                        <!-- <ul id="sidemenu">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about" class="nav-link about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects" class="nav-link projects" >Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li title="RESUME" id="resume-button-1"><a class="nav-link resume" id="resume-link-1"
+                            href="/assets/img/Aman_Kumar_Resume (2).pdf" download="Aman_Kumar_Resume" target="_blank"><i
+                                class="fa-solid fa-file-arrow-down"></i><span>Resume</span> </a></li>
+                        </ul> -->
+                        <div class="nav__menu" id="nav-menu" >
+                            <ul class="nav__list grid">
+                                <li class="nav__item ">
+                                    <a class="nav__link nav-link home" href="#home">
+                                        <i class="uil uil-estate nav__icon"></i>Home</a>
+                                </li>
+                                <li class="nav__item ">
+                                    <a class="nav__link nav-link about" href="#about ">
+                                        <i class="uil uil-user nav__icon"></i>About</a>
+                                </li>
+                                <li class="nav__item ">
+                                    <a class="nav__link nav-link skills" href="#skills">
+                                        <i class="uil uil-file-alt nav__icon"></i>Skills</a>
+                                </li>
+                                <li class="nav__item ">
+                                    <a class="nav__link nav-link projects" href="#projects">
+                                        <i class="uil uil-briefcase-alt nav__icon"></i>Projects</a>
+                                </li>
+                                <li class="nav__item ">
+                                    <a class="nav__link nav-link contact" href="#contact">
+                                        <i class="uil uil-link-alt nav__icon"></i>ContactMe</a>
+                                </li>
+                              
+                                <!-- <li class="nav__item ">
+                                    <a id="resume-button-1" download class="nav__link nav-link resume" target="_blank"
+                                        href="./assets/pdf/Aman_Kumar.pdf">
+                                        <i class="uil uil-file-blank nav__icon"></i>Resume
+                                    </a>
+                                </li> -->
+            
+            
+                                <li class="nav_item">
+                                    <button id="resume-button-1" download class="nav-link nav__link resume">
+                                        <a href="./assets/pdf/Aman_Kumar.pdf" class="nav_link" id="resume-link-1"
+                                            onclick="window.open('./assets/pdf/Aman_Kumar.pdf')" target="_blank" download>
+                                            <i class="uil uil-download-alt nav_icon"></i> Resume
+                                        </a>
+                                    </button>
+                                </li>
+                            </ul>
+                            <i class="uil uil-times nav__close nav__icon" id="nav-close"></i>
+                        </div>
+                        <i class="fas fa-bars" onclick="openmenu()"></i>
+                    </nav>
+                    <div class="header-text">
+                        <h1>Hey 👋</h1>
+                        &nbsp;
+                        <p>I'm <span id="user-detail-name">aman Kumar. <br> </span> A passionate backend developer.</p>
+                        <div class="resumebtn">
+                        <button id="resume-button-2" class="btn"><a id="resume-link-2" target="_blank" href='/assets/img/Aman_Kumar_Resume (2).pdf' download="Aman_Kumar_Resume">Resume</a></button>
+                    </div>
+                    </div>
+                </div>
+            </div> 
+        </nav>
+
+    </header>
+    
+    <!---------------------------------------About------------------------------------>
+    <div id="about" class="about section">
+        <div class="container"><h1 class="sub-title" class="nav-link about" class="about section" >About Me</h1>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/assets/img/2.png" alt="image" class="home-img">
+                </div>
+                <div class="about-col-2"  id="user-detail-intro">
+                    <p>>Welcome to my portfolio! I am a skilled Full-Stack web developer with a strong passion for coding and developing highly functional web applications and websites. Hailing from Sitamarhi, Bihar, India, I hold a Diploma in Mechanical Engineering from IIMT Greater-Noida.
+
+                        My experience in Full-Stack web development from Masai has equipped me with the necessary skills to create both the front-end and back-end of web applications. I have a keen eye for detail and a strong focus on user experience, which enables me to create visually appealing and highly functional web applications that are both user-friendly and efficient.
+                        
+                        As a Full-Stack web developer, I am highly proficient in Node.js, Express.js, and MongoDB stack, and have experience in building Full-Stack clones of existing web applications. I am highly motivated and enjoy taking on new challenges and solving complex problems, which has allowed me to create highly scalable and responsive web applications that are tailored to meet the specific needs of my clients.
+                        
+                        In addition to my technical expertise, I possess excellent communication and collaboration skills, which allow me to work effectively with clients and team members. I am committed to delivering high-quality work within the specified timelines and always strive to exceed client expectations.
+                        
+                        If you're looking for a talented and motivated Full-Stack web developer to take on your next web development project, please do not hesitate to get in touch. I would be more than happy to discuss your project requirements and how I can help you achieve your web development goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------------skills---------------------------------->
+    <div id="skills" class="nav-link skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="services-list">
+                <div class="skills-card">
+                    <!-- <i class="fas fa-code"></i> -->
+                    <h2 class="skills-card-name">Front End</h2>
+                    <p class="skills-card-img">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ullam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="skills-card">
+                    <!-- <i class="fas fa-crop-alt"></i> -->
+                    <h2 class="skills-card-name">Back End</h2>
+                    <p class="skills-card-img">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ullam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="skills-card">
+                    <!-- <i class="fab fa-app-store"></i> -->
+                    <h2 class="skills-card-name">Tools</h2>
+                    <i class="fa-brands fa-square-js"></i>
+                    <p class="skills-card-img">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ullam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------Projects---------------------------------->
+
+    <section class="portfolio section" id="projects">
+        <h2 class="section_title">Projects</h2>
+        <span class="section_subtitle" id="kl">
+            <p>✍️ Hey visitor, here is a brief overview of some of my previous work...</p>
+            </span>
+
+        <div class="portfolio_container container swiper-container">
+            <div class="swiper-wrapper">
+                <!-- ========== Project 1 ========== -->
+                <div class="portfolio_content grid swiper-slide project-card">
+                    <img src="/assets/img/cabbooking.png" alt="" class="portfolio_img">
+
+                    <div class="portfolio_data">
+                        <h3 class="portfolio_title project_title project-title">Online cab booking application</h3>
+                        <p class="portfolio_description project-description">
+                            This is an Online cab booking application called Safar Which provide rest api services for booking cab and for managing users with two roles admin and User with interactive api services</p>
+                        <p class="project-tech-stack"><b>Tech Stack : </b>JAVA | SPRING-BOOT| SPRING-SECURITY | MySQL | POSTMAN | HTML5 |
+                            CSS | JAVASCRIPT</p>
+                        <a href="https://github.com/akt0001c/fearful-doll-6867" target="_blank"
+                            class="project-github-link button button-flex button-small portfolio_button">
+                            Git Repo.
+                            <i class="uil uil-github-alt button_icon"></i>
+                        </a>
+                        <a href="#" target="_blank"
+                            class="button button-flex button-small portfolio_button project-deployed-link">
+                            Demo
+                            <i class="uil uil-external-link-alt button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ========== Project 2 ========== -->
+                <div class="portfolio_content grid swiper-slide project-card">
+                    <img src="/assets/img/Meesho.png" alt="" class="portfolio_img">
+
+                    <div class="portfolio_data">
+                        <h3 class="portfolio_title project_title project-title">Meesho</h3>
+                        <p class="portfolio_description project-description">Meesho is a social commerce platform that undertakes retail distribution, enabling small retail merchants to connect and sell their products effectively via social media channels. Bengaluru-based Meesho aims to create an environment where anyone can start their business with zero investment.</p>
+                        <p class="project-tech-stack"><b>Tech Stack : </b>HTML5 | CSS | JAVASCRIPT | Firebase | JSON</p>
+                        <a href="https://github.com/Amanastel/Meesho" target="_blank"
+                            class="project-github-link button button-flex button-small portfolio_button">
+                            Git Repo.
+                            <i class="uil uil-github-alt button_icon"></i>
+                        </a>
+                        <a href="extraordinary-jelly-edbf7b.netlify.app" target="_blank"
+                            class="button button-flex button-small portfolio_button project-deployed-link">
+                            Demo
+                            <i class="uil uil-external-link-alt button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ========== Project 3 ========== -->
+                <div class="portfolio_content grid swiper-slide project-card">
+                    <img src="/assets/img/sephora.png" alt="" class="portfolio_img">
+
+                    <div class="portfolio_data">
+                        <h3 class="portfolio_title project_title project-title">Sephora</h3>
+                        <p class="portfolio_description project-description">Sephora is a French multinational e-commerce company Sephora sells personal care and beauty products.</p>
+                        <p class="project-tech-stack"><b>Tech Stack : </b>HTML5 | CSS | JAVASCRIPT</p>
+                        <a href="https://github.com/Amanastel/-Sephora" target="_blank"
+                            class="project-github-link button button-flex button-small portfolio_button">
+                            Git Repo.
+                            <i class="uil uil-github-alt button_icon"></i>
+                        </a>
+                        <a href="aquamarine-choux-f19824.netlify.app/" target="_blank"
+                            class="button button-flex button-small portfolio_button project-deployed-link">
+                            Demo
+                            <i class="uil uil-external-link-alt button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ========== Project 4 ========== -->
+                <div class="portfolio_content grid swiper-slide project-card">
+                    <img src="/assets/img/prot.png" alt="" class="portfolio_img">
+
+                    <div class="portfolio_data">
+                        <h3 class="portfolio_title project_title project-title">My Portfolio</h3>
+                        <p class="portfolio_description project-description">My portfolio website adaptable to all
+                            devices, with UI components and animated interactions.</p>
+                        <p class="project-tech-stack"><b>Tech Stack : </b>HTML5 | CSS | JAVASCRIPT</p>
+                        <a href="https://amanastel.github.io/" target="_blank"
+                            class="project-github-link button button-flex button-small portfolio_button">
+                            Git Repo.
+                            <i class="uil uil-github-alt button_icon"></i>
+                        </a>
+                        <a href="https://amanastel.github.io/" target="_blank"
+                            class="button button-flex button-small portfolio_button project-deployed-link">
+                            Demo
+                            <i class="uil uil-external-link-alt button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!--------------------------------------Projects---------------------------------->
+
+
+
+    <div id="projects">
+        <h1>Projects</h1>
+        <div class="projects-body">
+            <div class="project-card">
+                <div class="project-img">
+                    <img alt="ss" src="./avatars/TNS.jpg"/>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">First Step</h3>
+                    <p class="project-description">
+                        An e-commerce website of footwear products where you will find 
+                        one of the best and exclusive selection of shoes, boots and slippers with exclusive offers.
+                    </p>
+                    <div class="project-tech-stack">
+                        <div>
+                            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"/>
+                            <p>HTML</p>
+                        </div>
+                        <div>
+                            <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"/>
+                            <p>CSS</p>
+                        </div>
+                        <div>
+                            <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png""/>
+                            <p>JavaScript</p>
+                        </div>
+                        <div>
+                            <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg"/>
+                            <p>Node.js</p>
+                        </div>
+                        <div>
+                            <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"/>
+                            <p>Express</p>
+                        </div>
+                        <div>
+                            <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"/>
+                            <p>Mongo DB</p>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <a target="_blank" href="https://github.com/Amanastel/-Sephora" class="project-github-link"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href="https://playful-axolotl-e88a6b.netlify.app/" class="project-deployed-link"><button>Go Live</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img alt="ss" src="/assets/img/2.png"/>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Fashion Hub</h3>
+                    <p class="project-description">
+                        A clone of Paytm Mall, an indian e-commerce website dealing with a wide variety of beauty, wellness and fashion products.
+                    </p>
+                    <div class="project-tech-stack">
+                        <div>
+                            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"/>
+                            <p>HTML</p>
+                        </div>
+                        <div>
+                            <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"/>
+                            <p>CSS</p>
+                        </div>
+                        <div>
+                            <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png"/>
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <a target="_blank" href="https://github.com/Amanastel/-Sephora" class="project-github-link"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href="https://playful-axolotl-e88a6b.netlify.app/" class="project-deployed-link"><button>Go Live</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img alt="ss" src="/assets/img/2.png"/>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">First Step</h3>
+                    <p class="project-description">
+                        A clone of Paytm Mall which is a one stop shop for one of the best selections of shoes, boots and slippers you've witnessed.
+                    </p>
+                    <div class="project-tech-stack">
+                        <div>
+                            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"/>
+                            <p>HTML</p>
+                        </div>
+                        <div>
+                            <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"/>
+                            <p>CSS</p>
+                        </div>
+                        <div>
+                            <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png"/>
+                            <p>JavaScript</p>
+                        </div>
+                        <div>
+                            <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg"/>
+                            <p>Node.js</p>
+                        </div>
+                        <div>
+                            <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"/>
+                            <p>Express</p>
+                        </div>
+                        <div>
+                            <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"/>
+                            <p>Mongo DB</p>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <a target="_blank" href="https://github.com/Amanastel/-Sephora" class="project-github-link"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href="https://playful-axolotl-e88a6b.netlify.app/" class="project-deployed-link"><button>Go Live</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img alt="ss" src="/assets/img/2.png"/>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Fashion Hub</h3>
+                    <p class="project-description">
+                        A clone of Nykaa, an indian e-commerce website dealing with a wide variety of beauty, wellness and fashion products.
+                    </p>
+                    <div class="project-tech-stack">
+                        <div>
+                            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"/>
+                            <p>HTML</p>
+                        </div>
+                        <div>
+                            <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"/>
+                            <p>CSS</p>
+                        </div>
+                        <div>
+                            <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png"/>
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <a target="_blank" href="https://github.com/Amanastel/-Sephora" class="project-github-link"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href="https://playful-axolotl-e88a6b.netlify.app/" class="project-deployed-link"><button>Go Live</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!--GitHub-->
+   <div id="github">
+        <h1>GitHub Stats</h1>
+        <div class="react-activity-calendar">
+        </div>
+        <div id="github-stats">
+            <div>
+                <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amanastel&theme=radical&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Himanshu04210"/>
+            </div>
+            <div>
+                <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=amanastel&theme=radical&hide_border=false&include_all_commits=true&count_private=true
+                " alt="amanastel"/>
+            </div>
+            <div>
+                <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=amanastel&theme=radical&hide_border=false
+                " alt="amanastel" />
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------Contact---------------------------------->
+    <div id="contact" class="nav-link contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <div>
+                    <h1 class="sub-title">Contact Me</h1>
+                    <a id="contact-email"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp; himanshupoly76075@gmail.com</a>
+                    <a id="contact-phone"><i class="fas fa-phone-square"></i>&nbsp;&nbsp; +91 8957730421</a>
+                    <a id="contact-linkedin" href="https://www.linkedin.com/in/aman-astel-18a543198/" target="_blank"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;in/himanshu-sahu-bb4439246/</a>
+                    <a id="contact-github" href="https://github.com/amanastel" target="_blank"><i class="fab fa-github"></i>&nbsp;&nbsp;github.com/Himanshu04210</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Created Himanshu Sahu <i class="fas fa-heart"></i> </p>
+        </div>
+    </div>
+
+    <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+    document.getElementById('resume-link-1').addEventListener("click",()=>{
+  window.location.assign("https://drive.google.com/file/d/1_2KU4TFZNaTSby3wrASm0hBVhogT_5pb/view?usp=sharing", target="_blank");
+})
+
+document.getElementById('resume-link-2').addEventListener("click",()=>{
+  window.location.assign("https://drive.google.com/file/d/1_2KU4TFZNaTSby3wrASm0hBVhogT_5pb/view?usp=sharing", target="_blank");
+})
+
+    </script>
+</body>
+</html>
