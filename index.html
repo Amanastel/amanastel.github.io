@@ -5,36 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio | Himanshu Sahu</title>
+    <title>Portfolio | aman kumar</title>
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="home" class="nav-link home">
-        <div class="container">
-            <nav id="nav-menu">
-                <img src="/assets/img/tp.png" alt="logo" class="logo" >
-                <ul id="sidemenu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about" class="nav-link about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects" class="nav-link projects" >Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li title="RESUME" id="resume-button-1"><a class="nav-link resume" id="resume-link-1"
-                    href="/assets/img/Aman_Kumar_Resume (2).pdf" download="Aman_Kumar_Resume" target="_blank"><i
-                        class="fa-solid fa-file-arrow-down"></i><span>Resume</span> </a></li>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <!-- <a href="#" class="nav__logo">Mayank Raj</a> -->
+            <a href="#" class="nav__logo">Aman Kumar</a>
+            <div class="nav__menu" id="nav-menu" >
+                <ul class="nav__list grid">
+                    <li class="nav__item ">
+                        <a class="nav__link nav-link home" href="#home">
+                            <i class="uil uil-estate nav__icon"></i>Home</a>
+                    </li>
+                    <li class="nav__item ">
+                        <a class="nav__link nav-link about" href="#about ">
+                            <i class="uil uil-user nav__icon"></i>About</a>
+                    </li>
+                    <li class="nav__item ">
+                        <a class="nav__link nav-link skills" href="#skills">
+                            <i class="uil uil-file-alt nav__icon"></i>Skills</a>
+                    </li>
+                    <li class="nav__item ">
+                        <a class="nav__link nav-link projects" href="#projects">
+                            <i class="uil uil-briefcase-alt nav__icon"></i>Projects</a>
+                    </li>
+                    <li class="nav__item ">
+                        <a class="nav__link nav-link contact" href="#contact">
+                            <i class="uil uil-link-alt nav__icon"></i>ContactMe</a>
+                    </li>
+                  
+                    <!-- <li class="nav__item ">
+                        <a id="resume-button-1" download class="nav__link nav-link resume" target="_blank"
+                            href="./assets/pdf/Aman_Kumar.pdf">
+                            <i class="uil uil-file-blank nav__icon"></i>Resume
+                        </a>
+                    </li> -->
+
+
+                    <li class="nav_item">
+                        <button id="resume-button-1" download class="nav-link nav__link resume">
+                            <a href="./assets/pdf/Aman_Kumar.pdf" class="nav_link" id="resume-link-1"
+                                onclick="window.open('./assets/pdf/Aman_Kumar.pdf')" target="_blank" download>
+                                <i class="uil uil-download-alt nav_icon"></i> Resume
+                            </a>
+                        </button>
+                    </li>
                 </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <h1>Hey 👋</h1>
-                &nbsp;
-                <p>I'm <span id="user-detail-name">aman Kumar. <br> </span> A passionate backend developer.</p>
-                <div class="resumebtn">
-                <button id="resume-button-2" class="btn"><a id="resume-link-2" target="_blank" href='/assets/img/Aman_Kumar_Resume (2).pdf' download="Aman_Kumar_Resume">Resume</a></button>
+                <i class="uil uil-times nav__close nav__icon" id="nav-close"></i>
             </div>
+            <div class="nav__btns">
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps nav__icon"></i>
+                </div>
             </div>
-        </div>
-    </div> <!---------------------------------------About------------------------------------>
+        </nav>
+    </header>
+    <!---------------------------------------About------------------------------------>
     <div id="about" class="about section">
         <div class="container"><h1 class="sub-title" class="nav-link about" class="about section" >About Me</h1>
             <div class="row">
