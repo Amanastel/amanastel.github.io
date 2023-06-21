@@ -1,518 +1,1006 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio | aman Kumar</title>
-    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/images/head-logo.png" type="image/icon type">
+    <title>Aman Chaudhary | Portfolio</title>
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/calendar.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
+
 <body>
+
+    <!-- ========== HEADER ========== -->
     <header class="header" id="header">
         <nav class="nav container">
+            <a href="" class="nav_logo"><span>A</span>MAN.</a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link nav-link home active-link">
+                            <i class="uil uil-estate nav_icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link nav-link about">
+                            <i class="uil uil-user nav_icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link nav-link skills">
+                            <i class="uil uil-file-alt nav_icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#projects" class="nav_link nav-link projects">
+                            <i class="uil uil-briefcase-alt nav_icon"></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#statistics" class="nav_link">
+                            <i class="uil uil-graph-bar nav_icon"></i> Statistics
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link nav-link contact">
+                            <i class="uil uil-message nav_icon"></i> Contact Me
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <button id="resume-button-1" class="nav-link resume">
+                            <a href="images/Aman_Chaudhary_Resume.pdf" class="nav_link" id="resume-link-1"
+                                onclick="window.open('images/Aman_Chaudhary_Resume.pdf')" target="_blank" download>
+                                <i class="uil uil-download-alt nav_icon"></i> Resume
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav_close" id="nav-close"></i>
+            </div>
 
-            <div id="home" class="nav-link home">
-                <div class="container">
-                    <nav id="nav-menu">
-                        <img src="/assets/img/tp.png" alt="logo" class="logo" >
-                        <!-- <ul id="sidemenu">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about" class="nav-link about">About</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#projects" class="nav-link projects" >Projects</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li title="RESUME" id="resume-button-1"><a class="nav-link resume" id="resume-link-1"
-                            href="/assets/img/Aman_Kumar_Resume (2).pdf" download="Aman_Kumar_Resume" target="_blank"><i
-                                class="fa-solid fa-file-arrow-down"></i><span>Resume</span> </a></li>
-                        </ul> -->
-                        <div class="nav__menu" id="nav-menu" >
-                            <ul class="nav__list grid">
-                                <li class="nav__item ">
-                                    <a class="nav__link nav-link home" href="#home">
-                                        <i class="uil uil-estate nav__icon"></i>Home</a>
-                                </li>
-                                <li class="nav__item ">
-                                    <a class="nav__link nav-link about" href="#about ">
-                                        <i class="uil uil-user nav__icon"></i>About</a>
-                                </li>
-                                <li class="nav__item ">
-                                    <a class="nav__link nav-link skills" href="#skills">
-                                        <i class="uil uil-file-alt nav__icon"></i>Skills</a>
-                                </li>
-                                <li class="nav__item ">
-                                    <a class="nav__link nav-link projects" href="#projects">
-                                        <i class="uil uil-briefcase-alt nav__icon"></i>Projects</a>
-                                </li>
-                                <li class="nav__item ">
-                                    <a class="nav__link nav-link contact" href="#contact">
-                                        <i class="uil uil-link-alt nav__icon"></i>ContactMe</a>
-                                </li>
-                              
-                                <!-- <li class="nav__item ">
-                                    <a id="resume-button-1" download class="nav__link nav-link resume" target="_blank"
-                                        href="./assets/pdf/Aman_Kumar.pdf">
-                                        <i class="uil uil-file-blank nav__icon"></i>Resume
-                                    </a>
-                                </li> -->
-            
-            
-                                <li class="nav_item">
-                                    <button id="resume-button-1" download class="nav-link nav__link resume">
-                                        <a href="./assets/pdf/Aman_Kumar.pdf" class="nav_link" id="resume-link-1"
-                                            onclick="window.open('./assets/pdf/Aman_Kumar.pdf')" target="_blank" download>
-                                            <i class="uil uil-download-alt nav_icon"></i> Resume
-                                        </a>
-                                    </button>
-                                </li>
-                            </ul>
-                            <i class="uil uil-times nav__close nav__icon" id="nav-close"></i>
-                        </div>
-                        <i class="fas fa-bars" onclick="openmenu()"></i>
-                    </nav>
-                    <div class="header-text">
-                        <h1>Hey 👋</h1>
-                        &nbsp;
-                        <p>I'm <span id="user-detail-name">aman Kumar. <br> </span> A passionate backend developer.</p>
-                        <div class="resumebtn">
-                        <button id="resume-button-2" class="btn"><a id="resume-link-2" target="_blank" href='/assets/img/Aman_Kumar_Resume (2).pdf' download="Aman_Kumar_Resume">Resume</a></button>
-                    </div>
-                    </div>
+            <div class="nav_btns">
+                <!-- ===== Theme Changer ===== -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
                 </div>
-            </div> 
+            </div>
         </nav>
-
     </header>
-    
-    <!---------------------------------------About------------------------------------>
-    <div id="about" class="about section">
-        <div class="container"><h1 class="sub-title" class="nav-link about" class="about section" >About Me</h1>
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="/assets/img/2.png" alt="image" class="home-img">
-                </div>
-                <div class="about-col-2"  id="user-detail-intro">
-                    <p>>Welcome to my portfolio! I am a skilled Full-Stack web developer with a strong passion for coding and developing highly functional web applications and websites. Hailing from Sitamarhi, Bihar, India, I hold a Diploma in Mechanical Engineering from IIMT Greater-Noida.
 
-                        My experience in Full-Stack web development from Masai has equipped me with the necessary skills to create both the front-end and back-end of web applications. I have a keen eye for detail and a strong focus on user experience, which enables me to create visually appealing and highly functional web applications that are both user-friendly and efficient.
+
+    <!-- ========== MAIN ========== -->
+    <main class="main">
+
+
+        <!-- ========== Home ========== -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <!-- socials -->
+                    <div class="home__social">
+                        <a target="_blank" href="https://www.linkedin.com/in/aman-astel-18a543198/"
+                            class="home__social-icon">
+
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a target="_blank" href="https://github.com/amanastel" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+
+                        </a>
+                        <a target="_blank" href="https://twitter.com/AmanAstel" class="home__social-icon">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+
+                    </div>
+                    <!-- profile image -->
+
+                    <div class="home__img ">
+
+                        <img src="./assets/img/tp.png" class="home-img" style="display:none;" alt="">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+
+                                <image class="home__blob-img" href="./assets/img/tp.png" />
+                            </g>
+                        </svg>
+                    </div>
+                    <!-- summary -->
+                    <div class="home__data">
+                        <h1 id="user-detail-name" class="home__title">Hi, I'm Aman Kumar</h1>
+                        <h3 class="home__subtitle">Full Stack Java Backend Developer</h3>
+                        <p class="home__description">Highly skilled Full Stack Java Backend Developer adept at
+                            contributing to a highly collaborative work environment.
+                            Designed and developed web applications across multiple APIs, third-party integrations and
+                            databases.
+                        </p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me <i class="uil uil-comment-alt button__icon"></i>&nbsp&nbsp
+
+                        </a>
+                    </div>
+
+                </div>
+                <!-- div scrolll -->
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button   button--flex">
+                        <!-- <i class="uil uil-direction home__scroll-arrow home__scroll-mouse"></i> -->
+                        <span class="home__scroll-name ">Scroll down</span>
+                        <i class="uil uil-angle-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="hr_break_line">
+
+
+        <!-- ========== About ========== -->
+        <section class="about section" id="about">
+            
+            <p id="user-detail-intro" style="display:none;">
+                "Java","Spring Boot","Hibernate","Maven","MySQL","Backend","Firebase","Git","JavaScript","HTML","CSS","RDBMS"</p>
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle"></span>
+
+            <div class="about__container container">
+                <img src="assets/img/2.png" alt="" class="about__img">
+                <div class="about__data">
+                    <p class="about__description" id="user-detail-intro">
+                        Hi! I'm Aman, I have a degree in Computer Science from Swami Vivekanand Subharti University
+                        .
+                        <br /><br />
+                        Currently, I'm Learning Full Stack Web Development at Masai School.
+                        <br /><br />
+                        An Inquisitive solution-driven Full Stack Web Developer. 
+                        Practiced over 700 data structures and algorithms. 
+                        Having 1200+ hours of hands-on experience in coding and developing real-world web applications. 
+                        Passionate about learning new technologies and methodologies.
+                        <br /><br />
+
+
+                    </p>
+
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">1200+</span>
+                            <span class="about__info-name">Hours of <br> Coding</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">700+</span>
+                            <span class="about__info-name">DSA <br> Problems </span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">20+</span>
+                            <span class="about__info-name">Completed <br> Project</span>
+                        </div>
+
+                    </div>
+
+                    <!-- button -> a ->  -->
+                    <!-- <div class="about__buttons" >
+                        <a id="resume-button-2" download="" href="assets/pdf/Aman_Kumar.pdf" target="_blank"
+                            class="button button--flex">
+                            My Resume<i class="uil uil-cloud-download button__icon"></i>&nbsp&nbsp
+                        </a>
+                    </div> -->
+                    
+
+                    <div class="about_buttons">
+                        <button class="button" id="resume-button-2">
+                            <a href="assets/pdf/Aman_Kumar.pdf" class="button-flex" id="resume-link-2"
+                                onclick="window.open('assets/pdf/Aman_Kumar.pdf')" target="_blank" download>
+                                My Resume <i class="uil uil-download-alt button_icon"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <hr class="hr_break_line">
+
+        <section class="qualification section" id="qualifications">
+
+            <h2 class="section__title">Qualification</h2>
+            <!-- <span class="section__subtitle">My personal journey</span> -->
+
+            <div class="qualification__container container">
+                <!-- tabs -->
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Journey
+                    </div>
+
+                    <!-- <div class="qualification__button button--flex" data-target="#work">
+                        <i class="uil uil-java-script qualification__icon"></i>
+                        Developer
+                    </div> -->
+                </div>
+
+                <div class="qualification__sections">
+                    <!--==================== QUALIFICATION  CONTENT 1 ====================-->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!--==================== QUALIFICATION 0 ====================-->
+                        <div class="qualification__data">
+
+                            <div>
+                                <h3 class="qualification__title">Full Stack Web Development</h3>
+                                <span class="qualification__subtitle">Masai School,</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2022 - Present
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification__data">
+                            <!-- empty for left -->
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Bachelor of computer
+                                    Application</h3>
+                                <span class="qualification__subtitle">Swami Vivekanand Subharti University
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2021 - 2024
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification__data">
+
+
+                            <div>
+                                <h3 class="qualification__title">Senior Secondary</h3>
+                                <span class="qualification__subtitle">O P S S Bharatpur Piyasi, Kanpur Dehat</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2017 - 2018
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                        </div>
+
+                        <!--==================== QUALIFICATION 3 ====================-->
+                        <div class="qualification__data">
+                            <!-- empty div for left -->
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Secondary</h3>
+                                <span class="qualification__subtitle">Shri Vidya Mandir, Hamipur</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2016 - 2017
+                                </div>
+                            </div>
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+                        </div>
+
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Skills ========== -->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <!-- <span class="section__subtitle">My intrests</span> -->
+
+            <div class="skills__container container grid">
+                <div>
+                    <!-- frontend  development -->
+
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title"> Frontend Development</h1>
+                                <!-- <span class="skills__subtitle">More than 1 years</span> -->
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data skills-card ">
+                                <div class="skills__titles ">
+                                    <h3 class="skills__name skills-card-name">HTML</h3>
+                                    
+                                </div>
+                                <div class="skills__bar">
+                                    <img class="skills-card-img fyouseek" src="" alt="">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="skills__data skills-card">
+                                <div class="skills__titles ">
+                                    <h3 class="skills__name skills-card-name">CSS</h3>
+                                    
+                                </div>
+                                <div class="skills__bar">
+                                    <img class="skills-card-img fyouseek" src="" alt="">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="skills__data skills-card">
+                                <div class="skills__titles ">
+                                    <h3 class="skills__name skills-card-name">JavaScript</h3>
+                                   
+                                </div>
+                                <div class="skills__bar">
+                                    <img class="skills-card-img fyouseek" src="" alt="">
+                                    
+                                </div>
+                            </div>
+                            <div class="skills__data skills-card">
+                                <div class="skills__titles ">
+                                    <h3 class="skills__name skills-card-name">Boostrap</h3>
+                                    
+                                </div>
+                                <div class="skills__bar">
+                                    <img class="skills-card-img fyouseek" src="" alt="">
+                                   
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Backend -->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <!-- <i class="uil uil-brackets-curly skills__icon"></i> -->
+                        <i class="uil uil-cloud-database-tree skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title"> Backend Development</h1>
+                            <!-- <span class="skills__subtitle">More than 4 years</span> -->
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data skills-card">
+                            <div class="skills__titles ">
+                                <h3 class="skills__name skills-card-name">Java</h3>
+                                
+                            </div>
+                            <div class="skills__bar">
+                                <img class="skills-card-img fyouseek" src="" alt="">
+                                
+                            </div>
+                        </div>
+
+                        <div class="skills__data skills-card">
+                            <div class="skills__titles ">
+                                <h3 class="skills__name skills-card-name">Spring Boot
+                                </h3>
+                               
+                            </div>
+                            <div class="skills__bar">
+                                <img class="skills-card-img fyouseek" src="" alt="">
+                                
+                            </div>
+                        </div>
+
+                        <div class="skills__data skills-card">
+                            <div class="skills__titles ">
+                                <h3 class="skills__name skills-card-name">Microservices
+                                </h3>
+                               
+                            </div>
+                            <div class="skills__bar">
+                                <img class="skills-card-img fyouseek" src="" alt="">
+                                
+                            </div>
+                        </div>
+
+                        <div class="skills__data skills-card">
+                            <div class="skills__titles ">
+                                <h3 class="skills__name skills-card-name">MySQL</h3>
+                               
+                            </div>
+                            <div class="skills__bar">
+                                <img class="skills-card-img fyouseek" src="" alt="">
+                                
+                            </div>
+                        </div>
+
                         
-                        As a Full-Stack web developer, I am highly proficient in Node.js, Express.js, and MongoDB stack, and have experience in building Full-Stack clones of existing web applications. I am highly motivated and enjoy taking on new challenges and solving complex problems, which has allowed me to create highly scalable and responsive web applications that are tailored to meet the specific needs of my clients.
-                        
-                        In addition to my technical expertise, I possess excellent communication and collaboration skills, which allow me to work effectively with clients and team members. I am committed to delivering high-quality work within the specified timelines and always strive to exceed client expectations.
-                        
-                        If you're looking for a talented and motivated Full-Stack web developer to take on your next web development project, please do not hesitate to get in touch. I would be more than happy to discuss your project requirements and how I can help you achieve your web development goals.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!--------------------------------------skills---------------------------------->
-    <div id="skills" class="nav-link skills">
-        <div class="container">
-            <h1 class="sub-title">Skills</h1>
-            <div class="services-list">
-                <div class="skills-card">
-                    <!-- <i class="fas fa-code"></i> -->
-                    <h2 class="skills-card-name">Front End</h2>
-                    <p class="skills-card-img">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ullam.</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div class="skills-card">
-                    <!-- <i class="fas fa-crop-alt"></i> -->
-                    <h2 class="skills-card-name">Back End</h2>
-                    <p class="skills-card-img">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ullam.</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div class="skills-card">
-                    <!-- <i class="fab fa-app-store"></i> -->
-                    <h2 class="skills-card-name">Tools</h2>
-                    <i class="fa-brands fa-square-js"></i>
-                    <p class="skills-card-img">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ullam.</p>
-                    <a href="#">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--------------------------------------Projects---------------------------------->
+                        <div class="skills__data skills-card">
+                            <div class="skills__titles ">
+                                <h3 class="skills__name skills-card-name">JDBC</h3>
+                                
+                            </div>
+                            <div class="skills__bar">
+                                <img class="skills-card-img fyouseek" src="" alt="">
+                               
+                            </div>
+                        </div>
 
-    <div id="projects">
-        <h1>Projects</h1>
-        <div class="projects-body">
-            <div class="project-card">
-                <div class="project-img">
-                    <img alt="ss" src="./avatars/TNS.jpg"/>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">First Step</h3>
-                    <p class="project-description">
-                        An e-commerce website of footwear products where you will find 
-                        one of the best and exclusive selection of shoes, boots and slippers with exclusive offers.
-                    </p>
-                    <div class="project-tech-stack">
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"/>
-                            <p>HTML</p>
+                        <div class="skills__data skills-card">
+                            <div class="skills__titles ">
+                                <h3 class="skills__name skills-card-name">Hibernate</h3>
+                                
+                            </div>
+                            <div class="skills__bar">
+                                <img class="skills-card-img fyouseek" src="" alt="">
+                                
+                            </div>
                         </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"/>
-                            <p>CSS</p>
-                        </div>
-                        <div>
-                            <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png""/>
-                            <p>JavaScript</p>
-                        </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg"/>
-                            <p>Node.js</p>
-                        </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"/>
-                            <p>Express</p>
-                        </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"/>
-                            <p>Mongo DB</p>
+
+                        <div class="skills__data skills-card">
+                            <div class="skills__titles ">
+                                <h3 class="skills__name skills-card-name">Rest APIs</h3>
+                                
+                            </div>
+                            <div class="skills__bar">
+                                <img class="skills-card-img fyouseek" src="" alt="">
+                                
+                            </div>
                         </div>
                     </div>
-                    <div class="project-buttons">
-                        <a target="_blank" href="https://github.com/Amanastel/-Sephora" class="project-github-link"><i class="fa-brands fa-github"></i></a>
-                        <a target="_blank" href="https://playful-axolotl-e88a6b.netlify.app/" class="project-deployed-link"><button>Go Live</button></a>
-                    </div>
                 </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img alt="ss" src="/assets/img/2.png"/>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">Fashion Hub</h3>
-                    <p class="project-description">
-                        A clone of Paytm Mall, an indian e-commerce website dealing with a wide variety of beauty, wellness and fashion products.
-                    </p>
-                    <div class="project-tech-stack">
+                <!-- Tools -->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-arrow skills__icon"></i>
                         <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"/>
-                            <p>HTML</p>
+                            <h1 class="skills__title">Tools </h1>
+                            <!-- <span class="skills__subtitle">More than 3 years</span> -->
                         </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"/>
-                            <p>CSS</p>
-                        </div>
-                        <div>
-                            <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png"/>
-                            <p>JavaScript</p>
-                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
                     </div>
-                    <div class="project-buttons">
-                        <a target="_blank" href="https://github.com/Amanastel/-Sephora" class="project-github-link"><i class="fa-brands fa-github"></i></a>
-                        <a target="_blank" href="https://playful-axolotl-e88a6b.netlify.app/" class="project-deployed-link"><button>Go Live</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img alt="ss" src="/assets/img/2.png"/>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">First Step</h3>
-                    <p class="project-description">
-                        A clone of Paytm Mall which is a one stop shop for one of the best selections of shoes, boots and slippers you've witnessed.
-                    </p>
-                    <div class="project-tech-stack">
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"/>
-                            <p>HTML</p>
+
+                    <div class="skills__list grid">
+
+                        <div class="skills__data skills-card">
+                            <div class="skills__titles ">
+                                <h3 class="skills__name skills-card-name">VS-Code | Codepan | Replit</h3>
+                                
+                            </div>
+                            <div class="skills__bar">
+                                <img class="skills-card-img fyouseek" src="" alt="">
+                               
+                            </div>
                         </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"/>
-                            <p>CSS</p>
+
+                        <div class="skills__data skills-card">
+                            <div class="skills__titles ">
+                                <h3 class="skills__name skills-card-name">Netlify | Vercel </h3>
+                                
+                            </div>
+                            <div class="skills__bar">
+                                <img class="skills-card-img fyouseek" src="" alt="">
+                               
+                            </div>
                         </div>
-                        <div>
-                            <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png"/>
-                            <p>JavaScript</p>
+
+                        <div class="skills__data skills-card">
+                            <div class="skills__titles ">
+                                <h3 class="skills__name skills-card-name">Git & Github</h3>
+                                
+                            </div>
+                            <div class="skills__bar">
+                                <img class="skills-card-img fyouseek" src="" alt="">
+                               
+                            </div>
                         </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg"/>
-                            <p>Node.js</p>
+
+                        <div class="skills__data skills-card">
+                            <div class="skills__titles ">
+                                <h3 class="skills__name skills-card-name">Postman</h3>
+                                
+                            </div>
+                            <div class="skills__bar">
+                                <img class="skills-card-img fyouseek" src="" alt="">
+                                
+                            </div>
                         </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"/>
-                            <p>Express</p>
+
+                        <div class="skills__data skills-card">
+                            <div class="skills__titles ">
+                                <h3 class="skills__name skills-card-name">Canva</h3>
+                                
+                            </div>
+                            <div class="skills__bar">
+                                <img class="skills-card-img fyouseek" src="" alt="">
+                                
+                            </div>
                         </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"/>
-                            <p>Mongo DB</p>
-                        </div>
-                    </div>
-                    <div class="project-buttons">
-                        <a target="_blank" href="https://github.com/Amanastel/-Sephora" class="project-github-link"><i class="fa-brands fa-github"></i></a>
-                        <a target="_blank" href="https://playful-axolotl-e88a6b.netlify.app/" class="project-deployed-link"><button>Go Live</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img alt="ss" src="/assets/img/2.png"/>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">Fashion Hub</h3>
-                    <p class="project-description">
-                        A clone of Nykaa, an indian e-commerce website dealing with a wide variety of beauty, wellness and fashion products.
-                    </p>
-                    <div class="project-tech-stack">
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"/>
-                            <p>HTML</p>
-                        </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"/>
-                            <p>CSS</p>
-                        </div>
-                        <div>
-                            <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png"/>
-                            <p>JavaScript</p>
-                        </div>
-                    </div>
-                    <div class="project-buttons">
-                        <a target="_blank" href="https://github.com/Amanastel/-Sephora" class="project-github-link"><i class="fa-brands fa-github"></i></a>
-                        <a target="_blank" href="https://playful-axolotl-e88a6b.netlify.app/" class="project-deployed-link"><button>Go Live</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--------------------------------------Projects---------------------------------->
 
 
+                       
 
-    <div id="projects">
-        <h1>Projects</h1>
-        <div class="projects-body">
-            <div class="project-card">
-                <div class="project-img">
-                    <img alt="ss" src="./avatars/TNS.jpg"/>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">First Step</h3>
-                    <p class="project-description">
-                        An e-commerce website of footwear products where you will find 
-                        one of the best and exclusive selection of shoes, boots and slippers with exclusive offers.
-                    </p>
-                    <div class="project-tech-stack">
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"/>
-                            <p>HTML</p>
-                        </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"/>
-                            <p>CSS</p>
-                        </div>
-                        <div>
-                            <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png""/>
-                            <p>JavaScript</p>
-                        </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg"/>
-                            <p>Node.js</p>
-                        </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"/>
-                            <p>Express</p>
-                        </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"/>
-                            <p>Mongo DB</p>
-                        </div>
-                    </div>
-                    <div class="project-buttons">
-                        <a target="_blank" href="https://github.com/Amanastel/-Sephora" class="project-github-link"><i class="fa-brands fa-github"></i></a>
-                        <a target="_blank" href="https://playful-axolotl-e88a6b.netlify.app/" class="project-deployed-link"><button>Go Live</button></a>
                     </div>
                 </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img alt="ss" src="/assets/img/2.png"/>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">Fashion Hub</h3>
-                    <p class="project-description">
-                        A clone of Paytm Mall, an indian e-commerce website dealing with a wide variety of beauty, wellness and fashion products.
-                    </p>
-                    <div class="project-tech-stack">
+                <!-- softskills -->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-analysis skills__icon"></i>
+
+
                         <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"/>
-                            <p>HTML</p>
+                            <h1 class="skills__title"> Soft Skills</h1>
+                            <!-- <span class="skills__subtitle">More than 1 years</span> -->
                         </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"/>
-                            <p>CSS</p>
-                        </div>
-                        <div>
-                            <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png"/>
-                            <p>JavaScript</p>
-                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
                     </div>
-                    <div class="project-buttons">
-                        <a target="_blank" href="https://github.com/Amanastel/-Sephora" class="project-github-link"><i class="fa-brands fa-github"></i></a>
-                        <a target="_blank" href="https://playful-axolotl-e88a6b.netlify.app/" class="project-deployed-link"><button>Go Live</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img alt="ss" src="/assets/img/2.png"/>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">First Step</h3>
-                    <p class="project-description">
-                        A clone of Paytm Mall which is a one stop shop for one of the best selections of shoes, boots and slippers you've witnessed.
-                    </p>
-                    <div class="project-tech-stack">
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"/>
-                            <p>HTML</p>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data skills-card">
+                            <div class="skills__titles ">
+                                <h3 class="skills__name skills-card-name">Project Management</h3>
+                                
+                            </div>
+                            <div class="skills__bar">
+                                <img class="skills-card-img fyouseek" src="" alt="">
+                               
+                            </div>
                         </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"/>
-                            <p>CSS</p>
+
+                        <div class="skills__data skills-card">
+                            <div class="skills__titles ">
+                                <h3 class="skills__name skills-card-name">Team Working</h3>
+                                
+                            </div>
+                            <div class="skills__bar">
+                                <img class="skills-card-img fyouseek" src="" alt="">
+                                
+                            </div>
                         </div>
-                        <div>
-                            <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png"/>
-                            <p>JavaScript</p>
+
+                        <div class="skills__data skills-card">
+                            <div class="skills__titles ">
+                                <h3 class="skills__name skills-card-name">Remotely Working</h3>
+                                
+                            </div>
+                            <div class="skills__bar">
+                                <img class="skills-card-img fyouseek" src="" alt="">
+                                
+                            </div>
                         </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg"/>
-                            <p>Node.js</p>
+                        <div class="skills__data skills-card">
+                            <div class="skills__titles ">
+                                <h3 class="skills__name skills-card-name">Problem-Solving</h3>
+                                
+                            </div>
+                            <div class="skills__bar">
+                                <img class="skills-card-img fyouseek" src="" alt="">
+                                
+                            </div>
                         </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"/>
-                            <p>Express</p>
+                        <div class="skills__data skills-card">
+                            <div class="skills__titles ">
+                                <h3 class="skills__name skills-card-name">Adaptability</h3>
+                                <!-- <span class="skills__number">70%</span> -->
+                            </div>
+                            <div class="skills__bar">
+                                <img class="skills-card-img fyouseek" src="" alt="">
+                                <!-- <span class="skills__percentage skills__70"></span> -->
+                            </div>
                         </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"/>
-                            <p>Mongo DB</p>
-                        </div>
-                    </div>
-                    <div class="project-buttons">
-                        <a target="_blank" href="https://github.com/Amanastel/-Sephora" class="project-github-link"><i class="fa-brands fa-github"></i></a>
-                        <a target="_blank" href="https://playful-axolotl-e88a6b.netlify.app/" class="project-deployed-link"><button>Go Live</button></a>
+
                     </div>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img alt="ss" src="/assets/img/2.png"/>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">Fashion Hub</h3>
-                    <p class="project-description">
-                        A clone of Nykaa, an indian e-commerce website dealing with a wide variety of beauty, wellness and fashion products.
-                    </p>
-                    <div class="project-tech-stack">
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"/>
-                            <p>HTML</p>
-                        </div>
-                        <div>
-                            <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"/>
-                            <p>CSS</p>
-                        </div>
-                        <div>
-                            <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png"/>
-                            <p>JavaScript</p>
+        </section>
+
+
+        <hr class="hr_break_line">
+
+
+        <!-- ========== Projects ========== -->
+        <section class="portfolio section" id="projects">
+            <h2 class="section_title">Projects</h2>
+            <span class="section_subtitle">Hey visitor, here is a brief overview of some of my previous work...
+                ✍️</span>
+
+            <div class="portfolio_container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- ========== Project 1 ========== -->
+                    <div class="portfolio_content grid swiper-slide project-card">
+                        <img src="/images/Plant & Planters.png" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title project_title project-title">Plant & Planters</h3>
+                            <p class="portfolio_description project-description">An online Plant Nursery Management
+                                Platform that allows customers to view the list of plants, seeds, and planters</p>
+                            <p class="project-tech-stack"><b>Tech Stack : </b>JAVA | SPRING | MYSQL | POSTMAN | HTML5 |
+                                CSS | JAVASCRIPT</p>
+                            <a href="https://github.com/shubhamyv13/miniature-mountain-3002" target="_blank"
+                                class="project-github-link button button-flex button-small portfolio_button">
+                                Git Repo.
+                                <i class="uil uil-github-alt button_icon"></i>
+                            </a>
+                            <a href="#" target="_blank"
+                                class="button button-flex button-small portfolio_button project-deployed-link">
+                                Demo
+                                <i class="uil uil-external-link-alt button_icon"></i>
+                            </a>
                         </div>
                     </div>
-                    <div class="project-buttons">
-                        <a target="_blank" href="https://github.com/Amanastel/-Sephora" class="project-github-link"><i class="fa-brands fa-github"></i></a>
-                        <a target="_blank" href="https://playful-axolotl-e88a6b.netlify.app/" class="project-deployed-link"><button>Go Live</button></a>
+
+                    <!-- ========== Project 2 ========== -->
+                    <div class="portfolio_content grid swiper-slide project-card">
+                        <img src="/images/SurveyHome.png" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title project_title project-title">Survey Home</h3>
+                            <p class="portfolio_description project-description">A clone of the SurveyMonkey website
+                                which is an online survey service provider that allow users to create web browser based
+                                surveys.</p>
+                            <p class="project-tech-stack"><b>Tech Stack : </b>HTML5 | CSS | JAVASCRIPT | JSON</p>
+                            <a href="https://github.com/AmanChaudhary214/simple-tank-2275" target="_blank"
+                                class="project-github-link button button-flex button-small portfolio_button">
+                                Git Repo.
+                                <i class="uil uil-github-alt button_icon"></i>
+                            </a>
+                            <a href="https://golden-baklava-528f55.netlify.app/" target="_blank"
+                                class="button button-flex button-small portfolio_button project-deployed-link">
+                                Demo
+                                <i class="uil uil-external-link-alt button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ========== Project 3 ========== -->
+                    <div class="portfolio_content grid swiper-slide project-card">
+                        <img src="/images/GroceryWala.png" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title project_title project-title">GroceryWala.com</h3>
+                            <p class="portfolio_description project-description">A clone of the Nature's Basket website
+                                which is an onine supermarket and premium grocery store in India.</p>
+                            <p class="project-tech-stack"><b>Tech Stack : </b>HTML5 | CSS | JAVASCRIPT</p>
+                            <a href="https://github.com/AmanChaudhary214/curly-hobbies-5555" target="_blank"
+                                class="project-github-link button button-flex button-small portfolio_button">
+                                Git Repo.
+                                <i class="uil uil-github-alt button_icon"></i>
+                            </a>
+                            <a href="https://delightful-marigold-662ba5.netlify.app/index.html" target="_blank"
+                                class="button button-flex button-small portfolio_button project-deployed-link">
+                                Demo
+                                <i class="uil uil-external-link-alt button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ========== Project 4 ========== -->
+                    <div class="portfolio_content grid swiper-slide project-card">
+                        <img src="/images/Portfolio-Light.png" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title project_title project-title">My Portfolio</h3>
+                            <p class="portfolio_description project-description">My portfolio website adaptable to all
+                                devices, with UI components and animated interactions.</p>
+                            <p class="project-tech-stack"><b>Tech Stack : </b>HTML5 | CSS | JAVASCRIPT</p>
+                            <a href="https://github.com/AmanChaudhary214/MyPortfolio" target="_blank"
+                                class="project-github-link button button-flex button-small portfolio_button">
+                                Git Repo.
+                                <i class="uil uil-github-alt button_icon"></i>
+                            </a>
+                            <a href="https://amanchaudhary214.github.io/" target="_blank"
+                                class="button button-flex button-small portfolio_button project-deployed-link">
+                                Demo
+                                <i class="uil uil-external-link-alt button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
+        <hr class="hr_break_line">
+
+
+        <!-- ========== Statistics ========== -->
+        <section class="statistics section" id="statistics">
+            <h2 class="section_title">Statistics</h2>
+            <span class="section_subtitle">My Github Statistics</span>
+            <div class="statistics_container container grid">
+                <img id="github-stats-card"
+                    src="https://github-readme-stats.vercel.app/api?username=AmanChaudhary214&theme=city_light&hide_border=true&include_all_commits=true&count_private=true"
+                    alt="github-stats-card">
+                <img id="github-top-langs"
+                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=AmanChaudhary214&langs_count=4&theme=city_light&hide_border=true&include_all_commits=true&count_private=true&layout=compact"
+                    alt="github-top-langs">
+                <img id="github-streak-stats"
+                    src="https://github-readme-streak-stats.herokuapp.com/?user=AmanChaudhary214&ring=5094f0&currStreakLabel=5094f0&fire=5094f0&theme=city_light&hide_border=true"
+                    alt="github-streak-stats">
+            </div>
+            <span class="section_subtitle">Github Calendar</span>
+            <div class="react-activity-calendar calendar">
+                <!-- Loading stuff -->
+                Loading the data just for you.
+            </div>
+        </section>
+
+
+        <hr class="hr_break_line">
+
+
+        <!-- ========== Contact ========== -->
+        <section class="contact section" id="contact">
+            <h2 class="section_title">Contact Me</h2>
+
+            <div class="contact_container container grid">
+                <div>
+                    <p class="contact_message">Feel free to drop a message if you have any suggestions or collaboration
+                        ideas, and we'll get in touch.</p>
+                    <div class="contact_information">
+                        <i class="uil uil-phone-alt contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title">Call Me</h3>
+                            <span class="contact_subtitle">+91 9454260173</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_information">
+                        <i class="uil uil-envelope-alt contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title">Email</h3>
+                            <span class="contact_subtitle">aman.chaudhary214@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_information">
+                        <i class="uil uil-map-marker contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title">Location</h3>
+                            <span class="contact_subtitle">Sector-5, Vikas Nagar, Lucknow</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_information">
+                        <i class="uil uil-linkedin-alt contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title">LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/amanchaudhary214/" target="_blank">
+                                <span class="contact_subtitle">www.linkedin.com/in/amanchaudhary214</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-   <!--GitHub-->
-   <div id="github">
-        <h1>GitHub Stats</h1>
-        <div class="react-activity-calendar">
-        </div>
-        <div id="github-stats">
-            <div>
-                <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amanastel&theme=radical&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Himanshu04210"/>
-            </div>
-            <div>
-                <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=amanastel&theme=radical&hide_border=false&include_all_commits=true&count_private=true
-                " alt="amanastel"/>
-            </div>
-            <div>
-                <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=amanastel&theme=radical&hide_border=false
-                " alt="amanastel" />
-            </div>
-        </div>
-    </div>
-    <!--------------------------------------Contact---------------------------------->
-    <div id="contact" class="nav-link contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
+                <form action="https://formspree.io/f/mwkjzwvn" method="post" class="contact_form grid">
+                    <div class="contact_inputs grid">
+                        <div class="contact_content">
+                            <label for="name" class="contact_label">Name</label>
+                            <input name="name" type="text" class="contact_input">
+                        </div>
+                        <div class="contact_content">
+                            <label for="email" class="contact_label">Email</label>
+                            <input name="email" type="email" class="contact_input" required>
+                        </div>
+                    </div>
+                    <div class="contact_content">
+                        <label for="project" class="contact_label">Project</label>
+                        <input name="project" type="text" class="contact_input">
+                    </div>
+                    <div class="contact_content">
+                        <label for="message" class="contact_label">Message</label>
+                        <textarea name="message" id="" cols="0" rows="7" class="contact_input"></textarea>
+                    </div>
                     <div>
-                    <h1 class="sub-title">Contact Me</h1>
-                    <a id="contact-email"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp; himanshupoly76075@gmail.com</a>
-                    <a id="contact-phone"><i class="fas fa-phone-square"></i>&nbsp;&nbsp; +91 8957730421</a>
-                    <a id="contact-linkedin" href="https://www.linkedin.com/in/aman-astel-18a543198/" target="_blank"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;in/himanshu-sahu-bb4439246/</a>
-                    <a id="contact-github" href="https://github.com/amanastel" target="_blank"><i class="fab fa-github"></i>&nbsp;&nbsp;github.com/Himanshu04210</a>
+                        <button class="button button-flex" type="submit">Send Message
+                            <i class="uil uil-message button_icon"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <hr class="hr_break_line">
+
+
+    </main>
+
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer_bg">
+            <img src="/images/3.png" alt="">
+            <div>
+                <div class="footer_container container grid">
+                    <div>
+                        <h1 class="footer_title">Aman Chaudhary</h1>
+                        <span class="footer_subtitle">Java Backend Developer</span>
+                    </div>
+                    <div class="footer_socials">
+                        <a href="https://github.com/AmanChaudhary214" target="_blank" class="footer_social">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/amanchaudhary214/" target="_blank" class="footer_social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://twitter.com/theaman214" target="_blank" class="footer_social">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
+                <div>
+                    <p class="footer_copy">Made with ❤️ by &#169; Aman Chaudhary</p>
+                    <p class="footer_copy">Inspired by <a
+                            href="https://github.com/bedimcode/responsive-portfolio-website-Alexa"
+                            target="_blank">@Bedimcode</a> | All rights reserved | 2023</p>
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <p>Created Himanshu Sahu <i class="fas fa-heart"></i> </p>
-        </div>
-    </div>
+    </footer>
 
+
+    <!-- ========== SCROLL TOP ========== -->
+    <a href="#home" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup_icon"></i>
+    </a>
+
+
+    <!-- ==================== JAVASCRIPT LINKED FILES ==================== -->
+    <script src="/script/script.js"></script>
+    <script src="/script/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ==================== AUTO-TYPE SCRIPT ==================== -->
     <script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab")
-    }
-
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-
-    document.getElementById('resume-link-1').addEventListener("click",()=>{
-  window.location.assign("https://drive.google.com/file/d/1_2KU4TFZNaTSby3wrASm0hBVhogT_5pb/view?usp=sharing", target="_blank");
-})
-
-document.getElementById('resume-link-2').addEventListener("click",()=>{
-  window.location.assign("https://drive.google.com/file/d/1_2KU4TFZNaTSby3wrASm0hBVhogT_5pb/view?usp=sharing", target="_blank");
-})
-
+        var typed = new Typed(".auto-type", {
+            strings: ["Java Backend Developer", "Photography Enthusiast", "Content-writer"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true,
+        });
     </script>
+
+    <!-- ==================== PROJECT SLIDER ==================== -->
+    <script>
+        let swiperPortfolio = new Swiper('.swiper-container', {
+            cssMode: true,
+            loop: true,
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            //mousewheel: true,
+            keyboard: true,
+        });
+
+        var swiper = new Swiper(".mySwiper", {
+            direction: "vertical",
+            slidesPerView: 1,
+            spaceBetween: 30,
+            mousewheel: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+    <!-- ==================== GITHUB CALENDER ==================== -->
+    <script>
+        // or enable responsive functionality
+        GitHubCalendar(".calendar", "AmanChaudhary214", {
+            responsive: true,
+            global_stats: true,
+            tooltips: true,
+        });
+    </script>
+
+    <!-- ==================== SCROLL REVEAL ANIMATION ==================== -->
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            // reset: true
+        })
+
+        // sr.reveal('.nav', {});
+        //sr.reveal('.nav_list>li', { interval: 100 });
+
+        sr.reveal('.home_data', { delay: 200 });
+        sr.reveal('.home_img', { delay: 200 });
+        sr.reveal('.home_social', { delay: 200 });
+        sr.reveal('.home_social-icon', { interval: 100 });
+        sr.reveal('.home_scroll', { delay: 200 });
+
+        sr.reveal('.about_img', { delay: 200 });
+        sr.reveal('.about_data', { delay: 200 });
+        sr.reveal('.about_info', { interval: 200 });
+        sr.reveal('.about_buttons', { interval: 100 });
+        sr.reveal('.qualification', { delay: 200 });
+
+        sr.reveal('.skills_container', {});
+        sr.reveal('.skills_content', { delay: 200 });
+        sr.reveal('.skills_header', { interval: 100 });
+
+        sr.reveal('.section_subtitle', { delay: 200 });
+        sr.reveal('.portfolio_container', { delay: 200 });
+
+        sr.reveal('.statistics_container>img', { interval: 100 });
+        sr.reveal('.calendar', { delay: 200 });
+
+        sr.reveal('.contact_container', {});
+        sr.reveal('.contact_information', { interval: 100 });
+        sr.reveal('form>div', { interval: 200 });
+
+        sr.reveal('.footer', {});
+        sr.reveal('.footer_container>div', { interval: 100 });
+    </script>
+
 </body>
+
 </html>
