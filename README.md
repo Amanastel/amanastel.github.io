@@ -6,21 +6,21 @@
 
 ### <h1 align="center">Website Preview 💻</h1>
 #### Home Section
-<img src="ReadmeImg/home.png" width="900">
+<img src="assets/screenshort/main.png" width="900">
 
 
 #### About Section
-<img src="ReadmeImg/about.png" width="900">
+<img src="assets/screenshort/aboutme.png" width="900">
 
 
 #### Projects Section
-<img src="ReadmeImg/project.png" width="900">
+<img src="assets/screenshort/project.png" width="900">
   
   #### Contact Section
-<img src="ReadmeImg/contact.png" width="900">
+<img src="assets/screenshort/contact.png" width="900">
 
 #### Skills Section
-<img src="ReadmeImg/skills.png" width="900">
+<img src="assets/screenshort/skills.png" width="900">
 
 
 :star: Star me on GitHub — it helps!
