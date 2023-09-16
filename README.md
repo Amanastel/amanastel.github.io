@@ -1,6 +1,6 @@
  # Aman  Portfolio
 
-<a href="https://shubh2-0.github.io/amanastel.github.io/" target="_blank">**Visit Now** 🌐🖇️</a>
+<a href="https://github.com/Amanastel/amanastel.github.io/" target="_blank">**Visit Now** 🌐🖇️</a>
 
 
 
