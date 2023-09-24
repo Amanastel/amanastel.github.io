@@ -78,7 +78,7 @@ body.dark-theme {
     --title-color: hsl(var(--hue-color), 8%, 95%);
     --text-color: hsl(var(--hue-color), 8%, 75%);
     --input-color: hsl(var(--hue-color), 29%, 16%);
-    --body-color: hsl(var(--hue-color), 42%, 22%);
+    --body-color: hsl(var(--hue-color), 42%, 12%);
     --container-color: #fff;
     --container-color: hsl(var(var(--hue-color), 29%, 16%));
     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
@@ -573,7 +573,7 @@ main>p {
 
 .qualification_calender {
     font-size: var(--smaller-font-size);
-    color: var(--text-color-light);
+    color: var(--text-color);
 }
 
 .qualification_rounder {
@@ -811,7 +811,7 @@ main>p {
 
 .contact_message {
     text-align: left;
-    color: var(--text-color-light);
+    color: var(--text-color);
     font-size: var(--font-size);
     margin-bottom: var(--mb-2);
 }
@@ -829,7 +829,7 @@ main>p {
 
 .contact_subtitle {
     font-size: var(--small-font-size);
-    color: var(--text-color-light);
+    color: var(--text-color);
 }
 
 .contact_content {
@@ -849,6 +849,7 @@ main>p {
     font-size: var(--normal-font-size);
     border: none;
     outline: none;
+    
     padding: .25rem .5rem .5rem 0;
 }
 
